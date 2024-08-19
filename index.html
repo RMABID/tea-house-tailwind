@@ -21,13 +21,17 @@
               colors: {
                 clifford: '#da373d',
               },
+              fontFamily: {
+                'manrope' : ["Manrope", 'sans-serif'],
+              },
+
             },
           },
         }
       </script>
 
 </head>
-<body>
+<body class="font-manrope">
     
 
     <main class="max-w-screen-xl mx-auto px-16 lg:px-28" >
@@ -223,7 +227,7 @@
           </div>
           <div class="flex justify-around items-center gap-8">
             <a href="#">Ready to get strated?</a>
-            <button class="bg-gradient-to-tr from-orange-200 to-pink-700 px-9 lg:py-4 py-2 rounded-lg text-white lg:font-bold">Get Started</button>
+            <button onclick="welcome()" class="bg-gradient-to-tr from-orange-200 to-pink-700 px-9 lg:py-4 py-2 rounded-lg text-white lg:font-bold">Get Started</button>
           </div>
         </div>
 
@@ -278,5 +282,12 @@
     </footer>
 
 
+    <script>
+      function welcome(){
+        // alert("code : SUMMER15");
+        var name = prompt("Please Tel Me your Name");
+        alert("Hello " + name);        
+      }
+    </script>
 </body>
 </html>
